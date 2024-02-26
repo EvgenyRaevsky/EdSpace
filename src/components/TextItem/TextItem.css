@@ -1,0 +1,40 @@
+.text-wrapper {
+    width: 100%;
+    display: grid;
+    gap: 40px;
+}
+
+.text-item {
+    display: grid;
+    gap: 20px;
+}
+
+.text-item__tilte {
+    width: 40%;
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+
+.text-item__tilte_h2 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #F3F6EF;
+}
+
+.text-item__tilte_h3 {
+    color: #6BFFCA;
+}
+
+.text-item__description {
+    width: 40%;
+    font-size: 1rem;
+    color: #F3F6EF;
+}
+
+.text-item__description_h2 {
+    font-size: 1.4rem;
+}
+
+.text-item:last-of-type {
+    margin-bottom: 50px;
+}

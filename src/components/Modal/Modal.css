@@ -1,0 +1,143 @@
+.modal-wrapper {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(180deg, #2F2A37 -7.87%, rgba(47, 42, 55, 0.41) 146.01%);
+    backdrop-filter: blur(20px);
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal-wrapper.active {
+    display: flex;
+    cursor: pointer;
+}
+
+.modal {
+    display: grid;
+    min-width: 420px;
+    max-height: 90dvh;
+    border-radius: 10px;
+    gap: 30px;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.00) -31.14%, #FFF 117.42%);
+    box-shadow: 0 5px 37px -1px rgba(0, 0, 0, 0.75);
+    padding: 45px;
+    overflow-y: auto;
+    cursor: default;
+}
+
+.modal::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+}
+
+.modal::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #899494;
+}
+
+.modal::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.modal__head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.modal__head>img+img {
+    transition: all .2s linear;
+    cursor: pointer;
+}
+
+.modal__head>img+img:hover {
+    transform: scale(1.1);
+}
+
+.input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #F3F6EF;
+    padding: 15px 5px;
+    color: #2F2A37;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: transparent;
+}
+
+.input.textarea {
+    min-height: 150px;
+}
+
+.input::placeholder {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #2F2A37;
+}
+
+.input:focus {
+    background-color: #f3f6ef9c;
+    border-radius: 5px;
+    border-bottom-color: #000;
+}
+
+.modal__label {
+    display: flex;
+    gap: 10px;
+}
+
+.modal__label .input {
+    cursor: pointer;
+}
+
+.modal__label-text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #6E6C72;
+}
+
+.modal__label-link {
+    color: #2F2A37;
+}
+
+.modal__btn {
+    width: max-content;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #2F2A37;
+    border-radius: 40px;
+    border: 3px solid #6BFFCA;
+    background: linear-gradient(92deg, #6BFFCA 13.34%, #00FF47 129.97%);
+    opacity: .95;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 12px 16px;
+}
+
+.modal__btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(92deg, #6bd8ff 13.34%, #6BFFCA 129.97%);
+    opacity: .9;
+    z-index: -1;
+    transition: .5s;
+}
+
+.modal__btn:hover::before {
+    left: 0;
+}

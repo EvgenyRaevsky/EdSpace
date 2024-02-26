@@ -1,0 +1,30 @@
+.text-component {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 65px;
+}
+
+.text-component__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding: 10px 22px;
+    border-radius: 84px;
+    background-image: linear-gradient(180deg, #FFF -13.5%, rgba(243, 246, 239, 0.00) 187.91%);
+    box-shadow: 0 0 21px 7px rgba(0, 0, 0, 0.34);
+    backdrop-filter: blur(5px);
+    transition: all .2s linear;
+    cursor: pointer;
+}
+
+.text-component__item:hover {
+    box-shadow: 2px 2px 12px 1px rgba(150, 255, 255, 0.3);
+}
+
+.text-component__name {
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #2F2A37;
+}

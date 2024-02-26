@@ -1,0 +1,73 @@
+.card-wrapper {
+    display: grid;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.card-wrapper-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 150px;
+}
+
+.card-wrapper-col {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    display: grid;
+    gap: 20px;
+    border-radius: 10px;
+    align-content: flex-start;
+    padding: 40px;
+}
+
+.card.card-row {
+    display: flex;
+    gap: 40px;
+    padding: 0;
+}
+
+.card.card-col {
+    background-image: linear-gradient(139deg, #FFF -21.71%, rgba(243, 246, 239, 0.00) 94.44%);
+    box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.04);
+    backdrop-filter: blur(5px);
+    transition: all .2s linear;
+    cursor: pointer;
+}
+
+.card.card-col:hover {
+    box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.25);
+}
+
+.card__description {
+    display: grid;
+    gap: 20px;
+}
+
+.card__title {
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+
+.card-row .card__title {
+    color: #F3F6EF;
+}
+
+.card-col .card__title {
+    color: #2F2A37;
+}
+
+.card__text {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.35;
+}
+
+.card-row .card__text {
+    width: 80%;
+    color: #F3F6EF;
+}
+
+.card-col .card__text {
+    color: #2F2A37;
+}
